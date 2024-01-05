@@ -1,47 +1,55 @@
 
 <template>
   <header>
-      <div class="align-items-center bg-dark text-white" style="border-bottom: 3px solid #adadad;">
+      <div class="align-items-center bg-light text-white mt-3 pb-4" style="border-bottom: 3px solid #adadad; background-color: #adadad !important;">
         <div class="p-4">
-          <h1 class="text-warning text-center" style="font-size: 90px;">Microtool Vue.js Project</h1>
-          <h5 class="text-light text-center">A project for Advance Web Application made with Vue.js and Bootstrap 5</h5>
+          <h5 class="text-dark text-center">Project in Advance Web Application</h5>
+          <h1 class="text-warning text-center" style="font-size: 90px;">Microtool Project</h1>
         </div>
-        <div class="col-md-12">
-          <div class="d-flex justify-content-between">
-            <div class="card mt-3 w-100 mx-2 mb-3" :class="flexBox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mt-3 w-100 mx-2 mb-3" :class="flexBox">
                 <a @click="showFlexbox" class="text-decoration-none" >
                   <div class="card-body">
                     <h5 class="card-title">Flexbox</h5>
                     <p class="card-text">A CSS layout module.</p>
                   </div>
                 </a>
+              </div>
             </div>
-            <div @click="showPasswordGenerator" class="card mt-3 w-100 mx-2 mb-3" :class="passGen">
+            <div class="col-md-6">
+              <div @click="showPasswordGenerator" class="card mt-3 w-100 mx-2 mb-3" :class="passGen">
                 <a href="javascript: void(0)" class="text-decoration-none">
                   <div class="card-body">
                     <h5 class="card-title">Password Generator</h5>
                     <p class="card-text">A random password generator.</p>
                   </div>
                 </a>
+              </div>
             </div>
-            <div @click="showCountdownTimer" class="card mt-3 w-100 mx-2 mb-3" :class="countTimer">
+            <div class="col-md-6">
+              <div @click="showCountdownTimer" class="card mt-3 w-100 mx-2 mb-3" :class="countTimer">
                 <a href="javascript: void(0)" class="text-decoration-none">
                   <div class="card-body">
                     <h5 class="card-title">Countdown Timer</h5>
                     <p class="card-text">A simple countdown timer.</p>
                   </div>
                 </a>
+              </div>
             </div>
-            <div @click="showMetricConverter" class="card mt-3 w-100 mx-2 mb-3" :class="metricCon">
+            <div class="col-md-6">
+              <div @click="showMetricConverter" class="card mt-3 w-100 mx-2 mb-3" :class="metricCon">
                 <a href="javascript: void(0)" class="text-decoration-none">
                   <div class="card-body">
                     <h5 class="card-title">Metric Converter</h5>
                     <p class="card-text">A conversion tool for metric units</p>
                   </div>
                 </a>
+              </div>
             </div>
           </div>
-      </div>
+        </div>
       </div>
   </header>
   <div class="container py-3" style="height: 100vh;">
@@ -127,7 +135,7 @@
 
 <style>
   div .active{
-    background-color: #008fff;
+    background-color: #3a4b58;
     cursor: pointer;
   }
   div .active a{

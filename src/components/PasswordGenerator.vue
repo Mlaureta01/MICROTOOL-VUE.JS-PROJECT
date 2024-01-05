@@ -1,8 +1,8 @@
 
 <template>
-    <div class="col-md-12 p-5" v-if="showPasswordGeneratorComponent" style="padding: 50px 200px !important; background: #7e7e7e; border-radius: 10px;">
+    <div class="col-md-12 p-5" v-if="showPasswordGeneratorComponent" style="padding: 50px 200px !important; border-radius: 10px;">
         <div class="text-center mb-5">
-            <h1>Random Password Generator</h1>
+            <h1 class="text-success">Random Password Generator</h1>
         </div>
         <div class="form-group text-center">
             <div class="text-center d-flex flex-column justify-content-center align-items-center">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="mt-3 d-flex justify-content-center">
-                        <button class="btn btn-primary" @click="generatePassword">Generate Password</button>
+                        <button class="btn btn-warning" @click="generatePassword">Generate Password</button>
                     </div>
                 </div>
             </div>
