@@ -1,7 +1,7 @@
 <template>
-    <div class="col-md-12 p-5" v-if="showCountdownTimerComponent" style="padding: 50px 200px !important; border-radius: 10px;">
+    <div class="col-md-12 p-5" v-if="showCountdownTimerComponent" style="padding: 50px 200px !important; background: #7e7e7e; border-radius: 10px;">
         <div class="text-center mb-5">
-            <h1 class="text-success">Countdown Timer</h1>
+            <h1>Countdown Timer</h1>
         </div>
         <div class="form-group d-flex flex-column justify-content-center align-items-center" v-if="!isRunning">
             <label style="font-weight: bold;">Timer Duration (in seconds):</label>

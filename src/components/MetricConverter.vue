@@ -1,7 +1,7 @@
 <template>
-    <div class="col-md-12 p-5" v-if="showMetricConverterComponent" style="padding: 50px 200px !important;  border-radius: 10px;">
+    <div class="col-md-12 p-5" v-if="showMetricConverterComponent" style="padding: 50px 200px !important; background: #7e7e7e; border-radius: 10px;">
         <div class="text-center mb-5">
-            <h1 class="text-success">Currency Converter</h1>
+            <h1>Currency Converter</h1>
         </div>
         <div class="form-group">
             <label style="font-weight: bold;">Input Value:</label>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="mt-5 d-flex justify-content-center">
-                    <button class="btn btn-success mx-1" @click="convert" v-if="result == null">Convert</button>
+                    <button class="btn btn-primary mx-1" @click="convert" v-if="result == null">Convert</button>
                     <button v-if="result !== null" class="btn btn-warning mx-1" @click="clear">Try Again</button>
                 </div>
             </div>
