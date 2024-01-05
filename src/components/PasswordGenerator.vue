@@ -6,7 +6,7 @@
         </div>
         <div class="form-group text-center">
             <div class="text-center d-flex flex-column justify-content-center align-items-center">
-                <label class="text-center" style="font-weight: bold;">Input password length:</label>
+                <label class="text-center" style="font-weight: bold;">Input Password length:</label>
                 <input type="number" id="length" min="6" max="30" v-model="passwordLength" class="form-control mt-2 w-25" placeholder="Minimum of 6 characters" >
             </div>
         </div>
